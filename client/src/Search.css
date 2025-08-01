@@ -1,0 +1,68 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../public/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.stock-list-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  overflow: hidden;
+  background-color: transparent; /* allow background to show through */
+}
+
+.stock-list {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  overflow-y: auto;  /* allow inner scroll */
+  padding-right: 10px; /* space for scrollbar */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each item */
+.stock-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.stock-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Text layout */
+.stock-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stock-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e1e1e;
+}
+
+.stock-symbol {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+.stock-sector {
+  font-size: 14px;
+  color: #888;
+}

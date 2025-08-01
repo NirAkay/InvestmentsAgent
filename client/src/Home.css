@@ -1,0 +1,83 @@
+.logout {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.custom-width {
+  width: 20% !important;
+  flex: none !important;
+  border: 1px solid red;
+}
+
+.search_input {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 20px;
+    flex: none;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* prevent outer scroll */
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top-section {
+  padding: 10px 20px;
+  flex-shrink: 0;
+}
+
+.favorites-container {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorites-title {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.favorites-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 0 10px;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.favorites-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.favorites-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.favorites-list::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 3px;
+}
+

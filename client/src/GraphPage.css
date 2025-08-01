@@ -1,0 +1,42 @@
+.center-graph {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* optional spacing */
+}
+
+.stock-title {
+  margin-top: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.stock-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; /* mt-5 in Bootstrap terms */
+}
+
+.stock-title {
+  font-size: 1.6rem;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.stock-change {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.favorites {
+  margin-right: 10px;
+  size: 30px;
+}
